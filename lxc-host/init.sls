@@ -106,7 +106,7 @@ vagrant plugin install vagrant-salt:
       - pkg: vagrant
 
 # install a precise64 lxc box
-vagrant box add precise64 http://dl.dropbox.com/u/13510779/lxc-precise-amd64-2013-07-12.box
+'vagrant box add precise64 http://dl.dropbox.com/u/13510779/lxc-precise-amd64-2013-07-12.box':
   cmd:
     - run
     - user: vagrant

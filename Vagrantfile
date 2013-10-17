@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "precise64"
-  config.vm.network :public_network
+  # config.vm.network :public_network
 
   ## For masterless, mount your salt file root
   config.vm.synced_folder ".", "/srv/salt/"
