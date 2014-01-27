@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   end
 
   # Use salt to provision the bare box to an LXC host
-  config.vm.synced_folder ".", "/srv/salt/"
+  config.vm.synced_folder "./salt", "/srv/salt/"
   config.vm.synced_folder "vagrant/pillar", "/srv/pillar/"
 
   config.vm.provision :salt do |salt|

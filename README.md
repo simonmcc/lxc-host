@@ -8,12 +8,12 @@ This is really just an automated setup base on [Rui Carmo](http://taoofmac.com/s
 We use salt to configure the the VirtualBox instance that's going to run all of the lxc containers, so we need the salt provisioner installed:
 
     vagrant plugin install vagrant-salt
-    
+
 Then just vagrant up & ssh into the new virtual machine:
 
     vagrant up
     vagrant ssh
-    
+
 Once you're in the virtual machine, some of the defaults have been adjusted to use lxc instead of VirtualBox.
 
 
