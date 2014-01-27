@@ -16,8 +16,11 @@ requirements:
       - build-essential
       - lxc
       - redir
-      - openssh-server
       - curl
+
+openssh-server:
+  pkg:
+    - installed
 
 # set UseDNS=no in /etc/ssh/sshd_config to speed up connections
 /etc/ssh/sshd_config:
