@@ -19,7 +19,8 @@ requirements:
       - curl
 
 openssh-server:
-  pkg.installed
+  pkg:
+    - installed
 
 # set UseDNS=no in /etc/ssh/sshd_config to speed up connections
 /etc/ssh/sshd_config:
